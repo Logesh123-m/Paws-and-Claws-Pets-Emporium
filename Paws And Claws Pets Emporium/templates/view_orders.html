@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Order Details</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        /* Add your custom CSS styles here */
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Order Details</h1>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Phone1</th>
+                    <th>Phone2</th>
+                    <th>Address</th>
+                    <th>Image</th>
+                    <th>Cost</th>
+                    
+                </tr>
+            </thead>
+            <tbody>
+                {% for row in data %}
+                <tr>
+                    <td>{{ row.NAME }}</td>
+                    <td>{{ row.EMAIL }}</td>
+                    <td>{{ row.PHONE1 }}</td>
+                    <td>{{ row.PHONE2 }}</td>
+                    <td>{{ row.ADDRESS }}</td>
+                    <td><img src="{{ row.IMAGEURL }}" alt="" width="100px" height="100px"></td>
+                    <td>{{ row.COST }}</td>
+                    
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+
+    <!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script> -->
+    <script>
+        // Add your custom JavaScript code here
+    </script>
+</body>
+</html>

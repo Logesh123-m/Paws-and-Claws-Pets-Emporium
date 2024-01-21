@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Order Success</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+    .success-icon {
+      font-size: 5rem;
+      color: #28a745;
+    }
+    .success-message {
+      margin-top: 1rem;
+      font-size: 2rem;
+      text-align: center;
+    }
+    .burst-out {
+      animation-duration: 1s;
+      animation-fill-mode: both;
+    }
+    .paper {
+      position: relative;
+      width: 50px;
+      height: 50px;
+      margin: 10px;
+      background-color: #f8f9fa;
+      animation: burstOut 1s ease;
+    }
+    @keyframes burstOut {
+      0% {
+        opacity: 0;
+        transform: scale(0.5);
+      }
+      100% {
+        opacity: 1;
+        transform: scale(1);
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="success-icon">
+      <i class="fas fa-check-circle"></i>
+    </div>
+    <div class="success-message burst-out" id="successMessage">
+      Thank you for your order! We will reach you shortly within 3-5 days😍.On the time you can make the payment🎈!!!
+    </div>
+    <div class="paper"></div>
+    <div class="paper"></div>
+    <div class="paper"></div>
+    <div class="paper"></div>
+    <div class="paper"></div>
+  </div>
+
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  <script>
+    // Add animation class to the success message
+    document.addEventListener("DOMContentLoaded", function(event) {
+      var successMessage = document.getElementById("successMessage");
+      successMessage.classList.add("burstOut");
+    });
+  </script>
+</body>
+</html>

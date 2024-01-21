@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Online Pet Shop</title>
+  <link rel="stylesheet" href="/static/css/styles.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <style>
+    /* Custom styles for the online pet shop homepage */
+    body{
+        background-color: rgba(236, 238, 236, 0.829);
+    }
+    .navbar-custom {
+      background-color: #6ea56e;
+    }
+    
+    .nav-link, .navbar-brand{
+        color: #9eec45;
+    }
+
+    .admin-button,
+    .user-button {
+      background-color: #fc56a9;
+      color: #6e2525;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 4px;
+      font-size: 1.2rem;
+      margin: 20px;
+      cursor: pointer;
+      animation: pulse 2s infinite;
+    }
+    
+    @keyframes pulse {
+      0% {
+        transform: scale(1);
+      }
+      50% {
+        transform: scale(1.2);
+      }
+      100% {
+        transform: scale(1);
+      }
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-md navbar-custom">
+    <a class="navbar-brand" href="#">Online Pet Shop</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Services</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="text-center">
+    <button class="admin-button"><a href="/adminhome" style="text-decoration: none;color: #6e2525;">Admin</a></button>
+    <button class="user-button"><a href="/userhome" style="text-decoration: none;color: #6e2525;">User</a></button>
+    <div class="jumbotron">
+        <h1>Welcome to Our Online Pet Shop!</h1>
+      </div>
+  </div>
+
+  <!-- Include Bootstrap JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+</html>

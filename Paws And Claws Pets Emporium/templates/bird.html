@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bird Shopping Website</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/static/css/dog_styles.css">
+    <style>
+        /* Custom styles */
+        /* Add your own custom CSS styles here */
+
+        /* Keyframes for the animations */
+        .navbar-custom {
+            background-color: #6ea56e;
+         }
+    
+        .nav-link, .navbar-brand{
+              color: #9eec45;
+        }
+
+        @keyframes slideIn {
+            from {
+                opacity: 0;
+                transform: translateY(50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        /* Animations for the sections */
+        .animated-section {
+            animation: slideIn 1s ease-in-out;
+        }
+
+        .animated-section .card {
+            animation: fadeIn 1s ease-in-out;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <!-- Add your header content here -->
+        <h1>Welcome to Bird Shopping</h1>
+        <nav class="navbar navbar-expand-md navbar-custom">
+            <!-- Add your navigation menu here -->
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active"><a class="nav-link" href="#food">Bird Food</a></li>
+                
+                <li class="nav-item"><a class="nav-link" href="#med">Medical Supplies</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="categories">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="single-prod">
+                            <a href="#food">
+                                <picture>
+                                    <source srcset="https://keerthirajpattappan.s3.us-south.cloud-object-storage.appdomain.cloud/b-f-1.jpg
+
+">
+                                    <img src="https://keerthirajpattappan.s3.us-south.cloud-object-storage.appdomain.cloud/b-f-1.jpg
+
+" alt="pic1"width="250"height="250"></picture>
+                            </a>
+                            <div class="overlay-up">
+                                <h3>Food</h3>
+                            </div>
+                        </div>
+                    </div>
+                   
+                    <div class="col-md-3">
+                        <div class="single-prod">
+                            <a href="#med">
+                                <picture>
+                                    <source media="(min-width: 1050px)" srcset="
+https://keerthirajpattappan.s3.us-south.cloud-object-storage.appdomain.cloud/b-m-3.jpg">
+                                    <img src="
+https://keerthirajpattappan.s3.us-south.cloud-object-storage.appdomain.cloud/b-m-3.jpg" alt="pic3"width="250"height="250">
+                                </picture>
+                            </a>
+                            <div class="overlay-up">
+                                <h3>Medical</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="categsecs">
+            <div class="container">
+                <div id="food"></div>
+                <div class="categ-title">
+                    <h2>Birds</h2>
+                </div>
+                <div class="row row1">
+                    <div class="col-md-3">
+                        <div class="prod-top">
+                            <picture>
+                                <source media="(min-width: 1050px)" srcset="https://keerthirajpattappan.s3.us-south.cloud-object-storage.appdomain.cloud/1.jpg">
+                                <img id="bird1" src="https://keerthirajpattappan.s3.us-south.cloud-object-storage.appdomain.cloud/1.jpg" alt="pic1" width="250"height="250">
+                            </picture>
+                            <div class="overlay-right">
+                                <button onclick="conf()" type="button" class="btn btn-secondary" title="Αγορά">
+                                <i class="fa fa-credit-card"></i>
+                            </button><br>
+                                <button onclick="sorry()" type="button" class="btn btn-secondary" title="Προσθήκη στο Καλάθι">
+                                <i class="fa fa-cart-plus"></i>
+                            </button>
+                            </div>
+                        </div>
+                        <div class="prod-bot text-center">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-half-o"></i>
+                            <h3>Bird </h3>
+                            <h5 id="bird1_cost">₹3500</h5>
+                            <a href="/purchase"> <img id="bird1_order" src="
+                                https://logesh.s3.us-south.cloud-object-storage.appdomain.cloud/shop_now_dog.png" alt="" width="100px" height="70px"> </a>
+                               
+                             
+                        </div>
+                       
+                    </div>
+
+                    <div class="col-md-3">
+                        <div class="prod-top">
+                            <picture>
+                                <source media="(min-width: 1050px)" srcset="https://keerthirajpattappan.s3.us-south.cloud-object-storage.appdomain.cloud/2.jpg">
+                                <img id="bird2" src="https://keerthirajpattappan.s3.us-south.cloud-object-storage.appdomain.cloud/2.jpg" alt="pic1"width="250"height="250">
+                            </picture>
+                            <div class="overlay-right">
+                                <button onclick="conf()" type="button" class="btn btn-secondary" title="Αγορά">
+                                <i class="fa fa-credit-card"></i>
+                            </button><br>
+                                <button onclick="sorry()" type="button" class="btn btn-secondary" title="Προσθήκη στο Καλάθι">
+                                <i class="fa fa-cart-plus"></i>
+                            </button>
+                            </div>
+                        </div>
+                        <div class="prod-bot text-center">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-half-o"></i>
+                            <i class="fa fa-star-o"></i>
+                            <h3>Friendly Bird </h3>
+                            <h5 id="bird2_cost">₹3000</h5>
+                            <a href="/purchase"> <img id="bird2_order" src="
+                                https://logesh.s3.us-south.cloud-object-storage.appdomain.cloud/shop_now_dog.png" alt="" width="100px" height="70px"> </a>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3">
+                        <div class="prod-top">
+                            <picture>
+                                <source media="(min-width: 1050px)" style="max-height: 250px;" srcset="https://keerthirajpattappan.s3.us-south.cloud-object-storage.appdomain.cloud/3.jpg">
+                                <img id="bird3" src="https://keerthirajpattappan.s3.us-south.cloud-object-storage.appdomain.cloud/3.jpg" width="250"height="250" alt="pic1">
+                            </picture>
+                            <div class="overlay-right">
+                                <button onclick="conf()" type="button" class="btn btn-secondary" title="Αγορά">
+                                <i class="fa fa-credit-card"></i>
+                            </button><br>
+                                <button onclick="sorry()" type="button" class="btn btn-secondary" title="Προσθήκη στο Καλάθι">
+                                <i class="fa fa-cart-plus"></i>
+                            </button>
+                            </div>
+                        </div>
+                        <div class="prod-bot text-center">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <h3>Bird </h3>
+                            <h5 id="bird3_cost">₹2500</h5>
+                            <a href="/purchase"> <img id="bird3_order" src="
+                                https://logesh.s3.us-south.cloud-object-storage.appdomain.cloud/shop_now_dog.png" alt="" width="100px" height="70px"> </a>
+                        </div>
+                    </div>
+
+                   
+                </div>
+            </div>
+        </section>
+        <section class="categsecs">
+            <div class="container">
+                <div id="food"></div>
+                <div class="categ-title">
+                    <h2>Food</h2>
+                </div>
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="prod-top">
+                            <picture>
+                                <source media="(min-width: 1050px)" srcset="https://keerthirajpattappan.s3.us-south.cloud-object-storage.appdomain.cloud/b-f-1.jpg
+
+">
+                                <img id="food1" src="https://keerthirajpattappan.s3.us-south.cloud-object-storage.appdomain.cloud/b-f-1.jpg
+
+" alt="pic1" style="height:250px ;">
+                            </picture>
+                            <div class="overlay-right">
+                                <button onclick="conf()" type="button" class="btn btn-secondary" title="Αγορά">
+                                <i class="fa fa-credit-card"></i>
+                            </button><br>
+                                <button onclick="sorry()" type="button" class="btn btn-secondary" title="Προσθήκη στο Καλάθι">
+                                <i class="fa fa-cart-plus"></i>
+                            </button>
+                            </div>
+                        </div>
+                        <div class="prod-bot text-center">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-half-o"></i>
+                            <h3>Bird Premium Food</h3>
+                            <h5 id="food_cost1">₹250</h5>
+                            <a href="/purchase"> <img id="food1_order" src="
+                                https://logesh.s3.us-south.cloud-object-storage.appdomain.cloud/shop_now_dog.png" alt="" width="100px" height="70px"> </a>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3">
+                        <div class="prod-top">
+                            <picture>
+                                <source media="(min-width: 1050px)" srcset="https://keerthirajpattappan.s3.us-south.cloud-object-storage.appdomain.cloud/b-f-2.jpg
+
+">
+                                <img id="food2" src="https://keerthirajpattappan.s3.us-south.cloud-object-storage.appdomain.cloud/b-f-2.jpg
+
+" alt="pic1"width="250"height="250">
+                            </picture>
+                            <div class="overlay-right">
+                                <button onclick="conf()" type="button" class="btn btn-secondary" title="Αγορά">
+                                <i class="fa fa-credit-card"></i>
+                            </button><br>
+                                <button onclick="sorry()" type="button" class="btn btn-secondary" title="Προσθήκη στο Καλάθι">
+                                <i class="fa fa-cart-plus"></i>
+                            </button>
+                            </div>
+                        </div>
+                        <div class="prod-bot text-center">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-half-o"></i>
+                            <i class="fa fa-star-o"></i>
+                            <h3>Timothy Naturals</h3>
+                            <h5 id="food_cost2">₹250</h5>
+                            <a href="/purchase"> <img id="food2_order" src="
+                                https://logesh.s3.us-south.cloud-object-storage.appdomain.cloud/shop_now_dog.png" alt="" width="100px" height="70px"> </a>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3">
+                        <div class="prod-top">
+                            <picture>
+                                <source media="(min-width: 1050px)" style="height: 250px;" srcset="
+
+https://keerthirajpattappan.s3.us-south.cloud-object-storage.appdomain.cloud/b-f-3.jpg
+">
+                                <img id="food3" src="
+https://keerthirajpattappan.s3.us-south.cloud-object-storage.appdomain.cloud/b-f-3.jpg
+" width="250"height="250" alt="pic1">
+                            </picture>
+                            <div class="overlay-right">
+                                <button onclick="conf()" type="button" class="btn btn-secondary" title="Αγορά">
+                                <i class="fa fa-credit-card"></i>
+                            </button><br>
+                                <button onclick="sorry()" type="button" class="btn btn-secondary" title="Προσθήκη στο Καλάθι">
+                                <i class="fa fa-cart-plus"></i>
+                            </button>
+                            </div>
+                        </div>
+                        <div class="prod-bot text-center">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <h3>Bird pet Food</h3>
+                            <h5 id="food_cost3">₹250</h5>
+                            <a href="/purchase"> <img id="food3_order" src="
+                                https://logesh.s3.us-south.cloud-object-storage.appdomain.cloud/shop_now_dog.png" alt="" width="100px" height="70px"> </a>
+                        </div>
+                    </div>
+
+                   
+                </div>
+            </div>
+        </section>
+
+
+               
+        <section class="categsecs">
+            <div class="container">
+                <div id="med"></div>
+                <div class="categ-title">
+                    <h2>Medical</h2>
+                </div>
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="prod-top">
+                            <picture>
+                                <source media="(min-width: 1050px)" srcset="
+https://keerthirajpattappan.s3.us-south.cloud-object-storage.appdomain.cloud/b-m-3.jpg
+">
+                                <img id="medicine1" src="
+https://keerthirajpattappan.s3.us-south.cloud-object-storage.appdomain.cloud/b-m-3.jpg
+" width="250"height="250"alt="pic1">
+                            </picture>
+                            <div class="overlay-right">
+                                <button onclick="conf()" type="button" class="btn btn-secondary" title="credit card">
+                                <i class="fa fa-credit-card"></i>
+                            </button><br>
+                                <button onclick="sorry()" type="button" class="btn btn-secondary" title="Add to cart">
+                                <i class="fa fa-cart-plus"></i>
+                            </button>
+                            </div>
+                        </div>
+                        <div class="prod-bot text-center">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-o"></i>
+                            <i class="fa fa-star-o"></i>
+                            <i class="fa fa-star-o"></i>
+                            <i class="fa fa-star-o"></i>
+                            <h3>Winsko</h3>
+                            <h5 id="medicine_cost1">₹250</h5>
+                            <a href="/purchase"> <img id="medicine1_order" src="
+                                https://logesh.s3.us-south.cloud-object-storage.appdomain.cloud/shop_now_dog.png" alt="" width="100px" height="70px"> </a>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3">
+                        <div class="prod-top">
+                            <picture>
+                                <source media="(min-width: 1050px)" srcset="https://keerthirajpattappan.s3.us-south.cloud-object-storage.appdomain.cloud/b-m-1.jpg
+		
+">
+                                <img id="medicine2" src="https://keerthirajpattappan.s3.us-south.cloud-object-storage.appdomain.cloud/b-m-1.jpg
+		
+" width="250"height="250"alt="pic1">
+                            </picture>
+                            <div class="overlay-right">
+                                <button onclick="conf()" type="button" class="btn btn-secondary" title="credit card">
+                                <i class="fa fa-credit-card"></i>
+                            </button><br>
+                                <button onclick="sorry()" type="button" class="btn btn-secondary" title="Add to cart">
+                                <i class="fa fa-cart-plus"></i>
+                            </button>
+                            </div>
+                        </div>
+                        <div class="prod-bot text-center">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-o"></i>
+                            <h3>Rebung</h3>
+                            <h5 id="medicine_cost2">₹250</h5>
+                            <a href="/purchase"> <img id="medicine2_order" src="
+                                https://logesh.s3.us-south.cloud-object-storage.appdomain.cloud/shop_now_dog.png" alt="" width="100px" height="70px"> </a>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3">
+                        <div class="prod-top">
+                            <picture>
+                                <source media="(min-width: 1050px)" srcset="
+
+https://keerthirajpattappan.s3.us-south.cloud-object-storage.appdomain.cloud/b-m-2.jpg">
+                                <img id="medicine3" src="https://keerthirajpattappan.s3.us-south.cloud-object-storage.appdomain.cloud/b-m-2.jpg"width="250"height="250" alt="pic1">
+                            </picture>
+                            <div class="overlay-right">
+                                <button onclick="conf()" type="button" class="btn btn-secondary" title="credit card">
+                                <i class="fa fa-credit-card"></i>
+                            </button><br>
+                                <button onclick="sorry()" type="button" class="btn btn-secondary" title="Add to cart">
+                                <i class="fa fa-cart-plus"></i>
+                            </button>
+                            </div>
+                        </div>
+                        <div class="prod-bot text-center">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-o"></i>
+                            <h3>Radix 55</h3>
+                            <h5 id="medicine_cost3">₹250</h5>
+                            <a href="/purchase"> <img id="medicine3_order" src="
+                                https://logesh.s3.us-south.cloud-object-storage.appdomain.cloud/shop_now_dog.png" alt="" width="100px" height="70px"> </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="static/js/bird_script.js"></script>
+    <script src="/static/js/add_bird.js"></script>
+    <!-- Include Bootstrap JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</body>
+</html>

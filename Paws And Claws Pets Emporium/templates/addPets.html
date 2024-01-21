@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="/static/css/addPets.css">
+  <style>
+   
+  </style>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">Admin Panel</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="#">Add Dog</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Add Cat</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">Add Others</a>
+          </li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="container">
+    <h1>Add Pets</h1>
+    <button class="btn btn-primary animated-button" onclick="animateButton(1)"><a href="/addDog">Add Dogs</a></button>
+    <button class="btn btn-secondary animated-button" onclick="animateButton(2)"><a href="/addCat">Add Cats</a></button>
+    <button class="btn btn-success animated-button" onclick="animateButton(3)"><a href="/addBird">Add Birds</a></button>
+    <button class="btn btn-danger animated-button" onclick="animateButton(4)"><a href="/addFish">Add Fish</a></button>
+    <button class="btn btn-warning animated-button" onclick="animateButton(5)"><a href="/addRabbit">Add Rabbit</a></button>
+  </div>
+
+  <!-- <script src="script.js"></script> -->
+  <script>
+    function animateButton(buttonIndex) {
+        var buttons = document.getElementsByClassName('animated-button');
+        var button = buttons[buttonIndex - 1];
+        button.classList.remove('animated-button');
+        void button.offsetWidth;
+        button.classList.add('animated-button');
+        }
+
+  </script>
+</body>
+</html>

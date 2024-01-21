@@ -1,0 +1,27 @@
+.jumbotron {
+    background-image: url('https://logesh.s3.us-south.cloud-object-storage.appdomain.cloud/background.jpg');
+    background-size: 100% 500px;
+    /* background-color: white; */
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .jumbotron h1 {
+    font-size: 6rem;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    animation: bounce 2s infinite;
+  }
+  
+  @keyframes bounce {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-20px);
+    }
+  }
